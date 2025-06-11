@@ -17,21 +17,21 @@ permalink: /
 
 <!-- Engineering English -->
 <div style="width: 250px; border: 1px solid #ddd; border-radius: 10px; padding: 20px; text-align: center; background: #f9f9f9;">
-  <h3>📘 Engineering English</h3>
+  <h3> Engineering English</h3>
   <p style="color: #666;">Language and writing skills development.</p>
   <a href="{{ site.baseurl }}/engineering-english" style="text-decoration: none; background: #007bff; color: white; padding: 10px 20px; border-radius: 5px;">Go to Course</a>
 </div>
 
 <!-- Physics -->
 <div style="width: 250px; border: 1px solid #ddd; border-radius: 10px; padding: 20px; text-align: center; background: #f9f9f9;">
-  <h3>🔭 Physics</h3>
+  <h3> Physics</h3>
   <p style="color: #666;">Fundamental theories and experiments.</p>
   <a href="{{ site.baseurl }}/physics" style="text-decoration: none; background: #28a745; color: white; padding: 10px 20px; border-radius: 5px;">Go to Course</a>
 </div>
 
 <!-- Mathematics -->
 <div style="width: 250px; border: 1px solid #ddd; border-radius: 10px; padding: 20px; text-align: center; background: #f9f9f9;">
-  <h3>📐 Mathematics</h3>
+  <h3> Mathematics</h3>
   <p style="color: #666;">Calculus, linear algebra, and logic.</p>
   <a href="{{ site.baseurl }}/mathematics" style="text-decoration: none; background: #ff9800; color: white; padding: 10px 20px; border-radius: 5px;">Go to Course</a>
 </div>
