@@ -1,21 +1,23 @@
 # Site settings
-course_name: Engineering English
-course_description: "Welcome to the website! Hope your contributions!"
-course_semester: "Fall 2025"
+title: SWJTU-Leeds Joint School 课程经验库
+description: 整理并分享西南交通大学 - 利兹联合学院各门课程的学习经验、准备建议与评价。
 
-baseurl: "/SWJTU-Leeds-Joint-School" # the subpath of your site, e.g. /blog/
-url: "http://lhannnn.github.io" # the base hostname & protocol for your site
+# 网站基础路径和网址
+baseurl: "/SWJTU-Leeds-Joint-School"  # 仓库名
+url: "https://lhannnn.github.io"      # 你 GitHub Pages 的基础 URL
 
+# 学校信息
 schoolname: "SWJTU-Leeds Joint School"
 schoolurl: "https://leeds.swjtu.edu.cn/"
-twitter_username: username 
+twitter_username: ""  # 不用就留空
 
+# 地址（可选）
 address: |
-    SWJTU-Leeds Joint School
-    Southwest Jiontong University
+    SWJTU-Leeds Joint School  
+    Southwest Jiaotong University  
     University of Leeds
 
-# Set your Google Analytics tracking ID (set up yours at http://www.google.com/analytics/)
+# Google Analytics（可选）
 # google_analytics: UA-XXXXXXXX-X
 
 ### Do not change the followings unless you know what you are doing ###
@@ -23,7 +25,7 @@ address: |
 # Build settings
 markdown: kramdown
 
-# Other options
+# URL 结构
 permalink: blog/:year/:month/:title
 excerpt_separator: "<!--more-->"
 
@@ -31,8 +33,9 @@ include: ['_images', '_css']
 exclude: ['develop']
 
 dateformat: "%m/%d/%Y"
-
 future: true
+
+# collections 原模板用于课程作业/讲义的组织，现在可以保留或忽略
 collections:
     events:
         output: true
@@ -42,7 +45,6 @@ collections:
         output: true
     announcements:
         output: false
-
 
 defaults:
   - scope:
