@@ -1,0 +1,37 @@
+---
+layout: default
+title: 课程评价
+permalink: /evaluation/
+---
+
+<h2>Engineering English 课程评价展示</h2>
+<div id="reviews"></div>
+
+<script>
+const SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQoB2HMprWp1OeQAOiHIk7g_JfaYzqJ-5o9r2EfDv1qLdpZLUryn02iz1nWA57CBkBMy_nS-PGMQYjQ/pub?output=csv";
+
+fetch(SHEET_URL)
+  .then(res => res.text())
+  .then(csv => {
+    const lines = csv.split("\n").slice(1); // 跳过第一行表头
+    const container = document.getElementById("reviews");
+
+    lines.forEach(line => {
+      const cols = line.split(",");
+      const timestamp = cols[0];
+      const content = cols[1];  // 根据你的表单顺序调整下标
+      const rating = cols[2];   // 假如你第二列是评价内容，第三列是评分
+
+      if (content.trim()) {
+        const entry = document.createElement("div");
+        entry.style = "margin-bottom: 20px; padding: 10px; border: 1px solid #ccc; border-radius: 10px;";
+        entry.innerHTML = `
+          <strong>评分：</strong> ${rating}/5<br>
+          <strong>评价内容：</strong><br>${content}<br>
+          <span style="font-size: 12px; color: gray;">${timestamp}</span>
+        `;
+        container.appendChild(entry);
+      }
+    });
+  });
+</script>
