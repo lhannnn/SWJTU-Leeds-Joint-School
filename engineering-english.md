@@ -20,6 +20,8 @@ permalink: /engineering-english/
 ## 主观评分  
 ⭐⭐⭐⭐⭐（5/5）
 
+<p><a href="{{ site.baseurl }}/evaluation/" class="btn" style="padding:10px 20px; background:#007bff; color:white; border-radius:5px; text-decoration:none;">查看课程评价</a></p>
+
 ## 匿名课程评价表
 
 欢迎你对本课程匿名评分和留言反馈！
